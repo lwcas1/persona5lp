@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Let's Play Persona</title>
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <a href="https://persona.atlus.com/p5r/?lang=en"><img src="./src/img/logo.png" alt="Persona 5's Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#gameplaySection">Gameplay</a></li>
+                    <li><a href="#charactersSection">Characters</a></li>
+                    <li><a href="#trailerSection">Trailer</a></li>
+                    <li><button class="openModal">PLAY NOW!</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modalContent">
+            <div class="closeModal">
+                <span>&times;</span>
+            </div>
+            <h2>Buy now!</h2>
+            <p>Access the store corresponding to the desired platform.</p>
+            <br><br>
+            <ul>
+                <li><a href="https://www.nintendo.com/us/store/products/persona-5-royal-switch/"><img src="./src/img/iconsApps/nintendo.svg" alt="Plataform Icon"></a></li>
+                <li><a href="https://store.playstation.com/pt-br/concept/10002771/"><img src="./src/img/iconsApps/playstation.svg" alt="Plataform Icon"></a></li>
+                <li><a href="https://www.xbox.com/pt-BR/games/store/persona-5-royal/9nzdhxl9sjj8"><img src="./src/img/iconsApps/xbox.svg" alt="Plataform Icon"></a></li>
+                <li><a href="https://www.xbox.com/pt-BR/games/store/persona-5-royal/9nzdhxl9sjj8"><img src="./src/img/iconsApps/windows.svg" alt="Plataform Icon"></a></li>
+                <li><a href="https://store.steampowered.com/agecheck/app/1687950/"><img src="./src/img/iconsApps/steam.svg" alt="Plataform Icon"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div id="leftMain">
+            <br>
+        </div>
+        <div id="contentMain">
+            <div class="textfieldMain">
+                <h1>Welcome to Persona 5</h1>
+                <p>Unleash your inner rebel and join the Phantom Thieves in their quest to change the world.</p>
+                <br><br><br>
+                <button class="openModal">Start your journey!</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="secondSection">
+        <div class="textfield">
+            <h1>About the Game</h1>
+            <p>Provides a brief overview of the Persona 5 game, including its genre, storyline, and key features.</p>
+            <br><br>
+            <div class="listAbout">
+                <div class="listItem">
+                    <h1>Stylish RPG</h1>
+                    <p>Immerse yourself in the stylish world of Persona 5, a visually stunning role-playing game.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Intriguing Storyline</h1>
+                    <p>Uncover the secrets of Tokyo as you navigate through a captivating and mysterious narrative.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Unique Characters</h1>
+                    <p>Meet a diverse cast of characters with their own distinct personalities and abilities.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Strategic Combat</h1>
+                    <p>Engage in strategic turn-based battles and unleash powerful Persona abilities.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Social Simulation</h1>
+                    <p>Balance your school life and social interactions to strengthen your bonds with allies.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Stylish Visuals</h1>
+                    <p>Experience stunning visuals and stylish animations that bring the game world to life.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <img src="./src/img/imgSlide1.png" class="slide" alt="Screenshot 1">
+                <img src="./src/img/imgSlide2.png" class="slide" alt="Screenshot 2">
+                <img src="./src/img/imgSlide3.png" class="slide" alt="Screenshot 3">
+                <img src="./src/img/imgSlide4.png" class="slide" alt="Screenshot 4">
+                <img src="./src/img/imgSlide5.png" class="slide" alt="Screenshot 5">
+            </div>
+            <button class="button" id="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="button" id="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="textfield" id="gameplaySection">
+            <h1>Gameplay</h1>
+            <br><br>
+            <div class="listAbout">
+                <div class="listItem">
+                    <h1>Stylish Combat</h1>
+                    <p>Engage in fast-paced turn-based battles with stylish animations and powerful Persona abilities.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Social Simulations</h1>
+                    <p>Experience the daily life of a high school student in Tokyo, build relationships, and manage your time wisely.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Persona Fusion</h1>
+                    <p>Fuse multiple Personas together to create powerful allies with unique skills and abilities.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Palaces and Shadows</h1>
+                    <p>Explore surreal palaces filled with Shadows, solve puzzles, and uncover the secrets within.</p>
+                </div>
+                <div class="listItem">
+                    <h1>Time Management</h1>
+                    <p>Balance your school life, part-time jobs, and dungeon crawling adventures to maximize your progress.</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QnDzJ9KzuV4?si=cd0skSplcYrp5c9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="charactersSection">
+        <div class="title">
+            <h1>Meet the Characters</h1>
+            <p>Get to know the main characters of Persona 5 and discover their unique abilities and roles in the game.</p>
+        </div>
+        <div class="cardBox">
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/joker.png" alt="Icone do personagem ``Joker``">
+                </div>
+                <div class="text">
+                    <h1>Joker</h1>
+                    <p>Joker is the protagonist of Persona 5. He is a high school student who becomes a Phantom Thief and uses his Persona, Arsene, to fight against corruption.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/morgana.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Morgana</h1>
+                    <p>Morgana is a mysterious cat-like creature who joins Joker and the other Phantom Thieves. He serves as their guide and provides valuable advice during their missions.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/ryuji.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Ryuji Sakamoto</h1>
+                    <p>Ryuji is one of Joker's classmates and a member of the Phantom Thieves. He has a rebellious personality and his Persona, Captain Kidd, specializes in physical attacks.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/ann.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Ann Takamaki</h1>
+                    <p>Ann is a popular student at Shujin Academy and a member of the Phantom Thieves. Her Persona, Carmen, excels in fire-based attacks and support skills.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/yusuke.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Yusuke Kitagawa</h1>
+                    <p>Yusuke is an aspiring artist and a member of the Phantom Thieves. His Persona, Goemon, specializes in ice-based attacks and has high agility.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/makoto.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Makoto Niijima</h1>
+                    <p>Makoto is the student council president at Shujin Academy and a member of the Phantom Thieves. Her Persona, Johanna, excels in nuclear-based attacks and defense.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/haru.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Haru Okumura</h1>
+                    <p>Haru is a wealthy heiress and a member of the Phantom Thieves. Her Persona, Milady, excels in psychic-based attacks and healing abilities.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./src/img/icons/futaba.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Futaba Sakura</h1>
+                    <p>Futaba is a genius hacker and a member of the Phantom Thieves. Her Persona, Necronomicon, specializes in electric-based attacks and support skills.</p>
+                </div>
+            </div>
+        </div>
+        <div class="textfield">
+            <h1>Experience an Unforgettable Story</h1>
+            <p>Step into the world of Persona 5 and embark on a thrilling journey filled with mystery, adventure, and unforgettable characters. Uncover the secrets of Tokyo's underground society as you navigate through a web of intrigue and deception. Immerse yourself in a captivating narrative that will keep you on the edge of your seat from start to finish. Are you ready to discover the truth?</p>
+        </div>
+    </section>
+
+    <section id="trailerSection">
+        <div class="title">
+            <h1>Trailer</h1>
+        </div>
+        <div class="content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wPqSkzNNPIg?si=Y2uG4CAXRlS3ARPR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="textfield">
+                <div class="textItem">
+                    <h1>Engaging Storyline</h1>
+                    <p>Immerse yourself in an engaging storyline filled with mystery, intrigue, and memorable characters.</p>
+                </div>
+                <div class="textItem">
+                    <h1>Unique Gameplay Mechanics</h1>
+                    <p>Discover unique gameplay mechanics that combine turn-based combat with social simulation elements.</p>
+                </div>
+                <div class="textItem">
+                    <h1>Dynamic Soundtrack</h1>
+                    <p>Enjoy a dynamic soundtrack that enhances the atmosphere and emotions of each moment in the game.</p>
+                </div>
+                <div class="textItem">
+                    <h1>Multiple Endings</h1>
+                    <p>Uncover multiple endings based on your choices and actions, adding replayability and depth to the game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contentFooter">
+            <div class="logoFooter">
+                <img id="esrb" src="data:image/svg+xml;base64,77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZpZXdCb3g9IjAsIDAsIDgzLjc1ODg0LCA0NC4zOCIgaWQ9IkxheWVyXzEiIGRhdGEtbmFtZT0iTGF5ZXIgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHZlcnNpb249IjEuMSI+DQogIDx0aXRsZT5SYXRpbmcgSWNvbiAtIDM4NDcxIC0gUGVyc29uYSA1IFJveWFsPC90aXRsZT4NCiAgPGRlZnM+DQogICAgPHN0eWxlPi5jbHMtMXtmaWxsOiMyMzFmMjA7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+DQogIDwvZGVmcz4NCiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgzLjc1ODg0IiBoZWlnaHQ9IjQ0LjM4IiBpZD0iYXJlYV9iYWNrIiBjbGFzcz0iY2xzLTEiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiAvPg0KICA8cmVjdCB4PSIxLjM3IiB5PSIxLjU4IiB3aWR0aD0iMjYuMTkiIGhlaWdodD0iNy4zNiIgY2xhc3M9ImNscy0yIiBzdHlsZT0iZmlsbDp3aGl0ZTsiIC8+DQogIDxyZWN0IHg9IjEuMzYiIHk9IjEwLjU0IiB3aWR0aD0iMjYuMjEiIGhlaWdodD0iMjcuMDUiIGNsYXNzPSJjbHMtMiIgc3R5bGU9ImZpbGw6d2hpdGU7IiAvPg0KICA8cmVjdCB4PSIyOS4xNiIgeT0iMS41NyIgd2lkdGg9IjUzLjAzODg0IiBoZWlnaHQ9IjQxLjIyIiBpZD0iYXJlYV9yaWdodCIgY2xhc3M9ImNscy0yIiBzdHlsZT0iZmlsbDp3aGl0ZTsiIC8+DQogIDxwb2x5Z29uIHBvaW50cz0iMS4zNiw0Mi43OCAxLjM2LDM5LjE5IDYuNjMsMzkuMTkgNi42Myw0MC4wMyAzLjQ4LDQwLjAzIDMuNDgsNDAuNTQgNi4xNCw0MC41NCA2LjE0LDQxLjM4IDMuNDgsNDEuMzggMy40OCw0MS45NCA2Ljc1LDQxLjk0IDYuNzUsNDIuNzggMS4zNiw0Mi43OCIgY2xhc3M9ImNscy0yIiBzdHlsZT0iZmlsbDp3aGl0ZTsiIC8+DQogIDxwYXRoIGQ9Ik02NDcgNDAyLjE3IEEwLjQxIDAuNDEgMCAwIDAgNjQ2LjY5IDQwMS45MyBBMS43OSAxLjc5IDAgMCAwIDY0Ni4xNCA0MDEuODYgQzY0NS42OCA0MDEuODYgNjQ1LjQ3IDQwMS45MyA2NDUuNDcgNDAyLjA3IEM2NDUuNDcgNDAyLjYgNjQ5LjE4MDEgNDAyLjI3IDY0OS4xODAxIDQwMy41NyBDNjQ5LjE4MDEgNDA0LjQxIDY0Ny45MzAxIDQwNC44MSA2NDYuMTgwMSA0MDQuODEgQzY0NC40MzAxIDQwNC44MSA2NDMuMzcwMSA0MDQuMjYgNjQzLjMyMDEgNDAzLjYxIEw2NDUuMzIwMSA0MDMuNjEgQTAuNDkgMC40OSAwIDAgMCA2NDUuNjcgNDAzLjg5IEExLjg5IDEuODkgMCAwIDAgNjQ2LjI3IDQwMy45OCBDNjQ2LjggNDAzLjk4IDY0Ny4xNSA0MDMuODkgNjQ3LjE1IDQwMy43MiBDNjQ3LjE1IDQwMy4xNyA2NDMuNDQgNDAzLjU1IDY0My40NCA0MDIuMTggQzY0My40NCA0MDEuNDIgNjQ0LjYyIDQwMS4wMyA2NDYuMjMgNDAxLjAzIEM2NDguMDIgNDAxLjAzIDY0OC44NCA0MDEuNTQgNjQ5IDQwMi4xNyB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjM1Ljc1LCAtMzYxLjkzKSIgY2xhc3M9ImNscy0yIiBzdHlsZT0iZmlsbDp3aGl0ZTsiIC8+DQogIDxwYXRoIGQ9Ik02NTIuMzIgNDAyLjY4IEw2NTMuMTUgNDAyLjY4IEM2NTMuOCA0MDIuNjggNjU0LjE1IDQwMi41OCA2NTQuMTUgNDAyLjM0IEM2NTQuMTUgNDAyLjEgNjUzLjc5IDQwMS45NiA2NTMuMyA0MDEuOTYgTDY1Mi4zIDQwMS45NiB6IE02NTIuMzIgNDAzLjQ2IEw2NTIuMzIgNDA0LjcxIEw2NTAuMiA0MDQuNzEgTDY1MC4yIDQwMS4xMiBMNjUzLjIgNDAxLjEyIEM2NTUuMzUgNDAxLjEyIDY1Ni4wNiA0MDEuNDUgNjU2LjA2IDQwMi4xMiBDNjU2LjA2IDQwMi41MyA2NTUuNzMgNDAyLjg4IDY1NC45NyA0MDMgQzY1NS42NSA0MDMuMTQgNjU2LjA2OTkgNDAzLjIyIDY1Ni4wNjk5IDQwNCBDNjU2LjA2OTkgNDA0LjQ2IDY1Ni4wNjk5IDQwNC42MyA2NTYuMjg5OSA0MDQuNjMgTDY1Ni4yODk5IDQwNC43MyBMNjU0LjIgNDA0LjczIEExLjI0IDEuMjQgMCAwIDEgNjU0LjA5IDQwNC4xMSBDNjU0LjA5IDQwMy42NCA2NTMuOTUgNDAzLjQ4IDY1Mi45NiA0MDMuNDggeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYzNS43NSwgLTM2MS45MykiIGNsYXNzPSJjbHMtMiIgc3R5bGU9ImZpbGw6d2hpdGU7IiAvPg0KICA8cGF0aCBkPSJNNjU5LjUyIDQwMiBMNjU5LjUyIDQwMi42IEw2NjAuNCA0MDIuNiBDNjYwLjgyIDQwMi42IDY2MS4xMyA0MDIuNSA2NjEuMTMgNDAyLjI5IEM2NjEuMTMgNDAyLjA4IDY2MC43MSA0MDIgNjYwLjI2IDQwMiB6IE02NTkuNTIgNDAzLjI1IEw2NTkuNTIgNDAzLjkyIEw2NjAuNDQgNDAzLjkyIEM2NjAuOTYgNDAzLjkyIDY2MS4zNiA0MDMuODYgNjYxLjM2IDQwMy41OSBDNjYxLjM2IDQwMy4zMiA2NjAuODcgNDAzLjI1IDY2MC4xOSA0MDMuMjUgeiBNNjU3LjQgNDA0Ljc1IEw2NTcuNCA0MDEuMTYgTDY2MC40OTAxIDQwMS4xNiBDNjYxLjk0MDEgNDAxLjE2IDY2My4xIDQwMS4zNiA2NjMuMSA0MDIuMDcgQzY2My4xIDQwMi40NCA2NjIuNjYgNDAyLjcxIDY2Mi4yNTAxIDQwMi44NSBDNjYyLjk1MDEgNDAyLjk1IDY2My4zMzAxIDQwMy4yOSA2NjMuMzMwMSA0MDMuNjcgQzY2My4zMzAxIDQwNC40NyA2NjIuMjMwMSA0MDQuNzUgNjYwLjU1IDQwNC43NSB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjM1Ljc1LCAtMzYxLjkzKSIgY2xhc3M9ImNscy0yIiBzdHlsZT0iZmlsbDp3aGl0ZTsiIC8+DQogIDxwb2x5Z29uIHBvaW50cz0iMi4zMSwxNy4yNCAxMC4zNCwxNS4wNyAxNC45MywyNS44NyAxNC45NiwyNS44NiAxMy41OCwxNC4yMSAyMS42MiwxMi4wNCAyNi42MywzMC44OSAyMS43MywzMi4yIDE4LjE1LDE4LjczIDE4LjExLDE4Ljc1IDE5LjYzLDMyLjc3IDE0LjMzLDM0LjIgOC42OCwyMS4yOSA4LjY0LDIxLjMgMTIuMjEsMzQuNzcgNy4zMiwzNi4wOSAyLjMxLDE3LjI0IiBjbGFzcz0iY2xzLTEiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiAvPg0KICA8cGF0aCBkPSJNNjM3LjgyIDM2OS4yNyBMNjM3LjgyIDM2NS4xIEw2MzkgMzY1LjEgTDYzOS41NSAzNjcuOTQgTDYzOS41NSAzNjcuOTQgTDY0MC4xNCAzNjUuMSBMNjQxLjI4IDM2NS4xIEw2NDEuMjggMzY5LjI3IEw2NDAuNTYwMSAzNjkuMjcgTDY0MC41NjAxIDM2Ni4wNSBMNjQwLjU2MDEgMzY2LjA1IEw2MzkuODkwMSAzNjkuMjcgTDYzOS4xOTAxIDM2OS4yNyBMNjM4LjU0IDM2Ni4wNSBMNjM4LjU0IDM2Ni4wNSBMNjM4LjU0IDM2OS4yNyB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjM1Ljc1LCAtMzYxLjkzKSIgY2xhc3M9ImNscy0xIiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgLz4NCiAgPHBhdGggZD0iTTY0MS42MiAzNjkuMjcgTDY0Mi42MiAzNjUuMSBMNjQzLjYyIDM2NS4xIEw2NDQuNjIgMzY5LjI3IEw2NDMuODQgMzY5LjI3IEw2NDMuNjUgMzY4LjM1IEw2NDIuNjUgMzY4LjM1IEw2NDIuNDUgMzY5LjI3IHogTTY0MyAzNjUuOSBMNjQzIDM2NS45IEw2NDIuNjYgMzY3LjcxIEw2NDMuMzYgMzY3LjcxIHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MzUuNzUsIC0zNjEuOTMpIiBjbGFzcz0iY2xzLTEiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiAvPg0KICA8cGF0aCBkPSJNNjQ2LjY3IDM2NS4xIEw2NDYuNjcgMzY1Ljc5IEw2NDUuODUgMzY1Ljc5IEw2NDUuODUgMzY5LjI3IEw2NDUuMTEgMzY5LjI3IEw2NDUuMTEgMzY1Ljc5IEw2NDQuMjkgMzY1Ljc5IEw2NDQuMjkgMzY1LjEgeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYzNS43NSwgLTM2MS45MykiIGNsYXNzPSJjbHMtMSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIC8+DQogIDxwYXRoIGQ9Ik02NDkuMzggMzY1LjEgTDY0OS4zOCAzNjguMSBBMS44MiAxLjgyIDAgMCAxIDY0OS4zMiAzNjguNTYgQTEgMSAwIDAgMSA2NDkuMTIgMzY4Ljk3IEExLjA3IDEuMDcgMCAwIDEgNjQ4Ljc2IDM2OS4yNyBBMS40MSAxLjQxIDAgMCAxIDY0OC4xOSAzNjkuMzggQTEuMTIgMS4xMiAwIDAgMSA2NDcuMjkgMzY5LjAzIEExLjM3IDEuMzcgMCAwIDEgNjQ2Ljk5IDM2OC4xIEw2NDYuOTkgMzY1LjEgTDY0Ny43MyAzNjUuMSBMNjQ3LjczIDM2OCBBMSAxIDAgMCAwIDY0Ny44NSAzNjguNTUgQTAuMzkgMC4zOSAwIDAgMCA2NDguMTggMzY4LjcxIEEwLjQgMC40IDAgMCAwIDY0OC41NCAzNjguNTMgQTEuMDcgMS4wNyAwIDAgMCA2NDguNjUgMzY4IEw2NDguNjUgMzY1LjEgeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYzNS43NSwgLTM2MS45MykiIGNsYXNzPSJjbHMtMSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIC8+DQogIDxwYXRoIGQ9Ik02NTAuNyAzNjkuMjcgTDY1MCAzNjkuMjcgTDY1MCAzNjUuMSBMNjUxLjM2IDM2NS4xIEEwLjc1IDAuNzUgMCAwIDEgNjUxLjk2IDM2NS4zOCBBMS4yNCAxLjI0IDAgMCAxIDY1Mi4xNzk5IDM2Ni4xOSBBMS40MiAxLjQyIDAgMCAxIDY1Mi4wMjk5IDM2Ni44NyBBMC42OCAwLjY4IDAgMCAxIDY1MS41Mjk5IDM2Ny4yMSBMNjUxLjUyOTkgMzY3LjIxIEw2NTEuNjg5OSAzNjcuMjEgQTAuNzIgMC43MiAwIDAgMSA2NTEuOTA5OSAzNjcuMzEgQTAuOTQgMC45NCAwIDAgMSA2NTIuMDg5OCAzNjcuNTUgQTEuMSAxLjEgMCAwIDEgNjUyLjE2OTkgMzY4IEw2NTIuMTY5OSAzNjguMjcgQzY1Mi4xNjk5IDM2OC4zOSA2NTIuMTY5OSAzNjguNTIgNjUyLjE2OTkgMzY4LjY0IEEzLjI3IDMuMjcgMCAwIDAgNjUyLjE2OTkgMzY4Ljk5IEEwLjggMC44IDAgMCAwIDY1Mi4xNjk5IDM2OS4yMiBMNjUxLjQ0OTkgMzY5LjIyIEExLjEgMS4xIDAgMCAxIDY1MS4zNjk5IDM2OC44MiBMNjUxLjM2OTkgMzY4LjA2IEEwLjg0IDAuODQgMCAwIDAgNjUxLjM2OTkgMzY3Ljc3IEEwLjM1IDAuMzUgMCAwIDAgNjUxLjIwOTkgMzY3LjU3IEEwLjU2IDAuNTYgMCAwIDAgNjUwLjg4OTkgMzY3LjQ5IEw2NTAuNjk5OSAzNjcuNDkgeiBNNjUwLjcgMzY2LjkgTDY1MSAzNjYuOSBBMC4zNSAwLjM1IDAgMCAwIDY1MS4xOCAzNjYuOSBBMC40NCAwLjQ0IDAgMCAwIDY1MS4zIDM2Ni43NSBBMC42NiAwLjY2IDAgMCAwIDY1MS4zNiAzNjYuNTUgQTEuNDkgMS40OSAwIDAgMCA2NTEuMzYgMzY2LjM0IEEwLjcyIDAuNzIgMCAwIDAgNjUxLjI2IDM2NS45MiBBMC4zMyAwLjMzIDAgMCAwIDY1MC45OCAzNjUuNzkgTDY1MC42NSAzNjUuNzkgeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYzNS43NSwgLTM2MS45MykiIGNsYXNzPSJjbHMtMSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIC8+DQogIDxwYXRoIGQ9Ik02NTIuNjkgMzY5LjI3IEw2NTIuNjkgMzY1LjEgTDY1NC42MSAzNjUuMSBMNjU0LjYxIDM2NS43NCBMNjUzLjQzIDM2NS43NCBMNjUzLjQzIDM2Ni43NCBMNjU0LjUyIDM2Ni43NCBMNjU0LjUyIDM2Ny4zOCBMNjUzLjQzIDM2Ny4zOCBMNjUzLjQzIDM2OC42IEw2NTQuNjUgMzY4LjYgTDY1NC42NSAzNjkuMjQwMSB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjM1Ljc1LCAtMzYxLjkzKSIgY2xhc3M9ImNscy0xIiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgLz4NCiAgPHBhdGggZD0iTTY1Ni4xNCAzNjUuNzMgTDY1Ni41IDM2NS40NSBBMi4yIDIuMiAwIDAgMCA2NTYuOCAzNjUuMDggTDY1Ny40NSAzNjUuMDggTDY1Ny40NSAzNjkuMjcgTDY1Ni43MSAzNjkuMjcgTDY1Ni43MSAzNjYuMDUgQTMuMiAzLjIgMCAwIDEgNjU2LjQ0IDM2Ni4zIEw2NTYuMTQgMzY2LjUxIHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MzUuNzUsIC0zNjEuOTMpIiBjbGFzcz0iY2xzLTEiIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiAvPg0KICA8cGF0aCBkPSJNNjYwIDM2NS44OCBMNjU5LjE3IDM2OS4yNyBMNjU4LjQxIDM2OS4yNyBMNjU5LjM0IDM2NS43MyBMNjU4LjE3IDM2NS43MyBMNjU4LjE3IDM2NS4wOCBMNjYwIDM2NS4wOCB6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjM1Ljc1LCAtMzYxLjkzKSIgY2xhc3M9ImNscy0xIiBzdHlsZT0iZmlsbDojMjMxRjIwOyIgLz4NCiAgPHBhdGggZD0iTTY2MS4xNyAzNjUuOTEgTDY2MS43MiAzNjUuOTEgTDY2MS43MiAzNjcuMDUgTDY2Mi41NCAzNjcuMDUgTDY2Mi41NCAzNjcuNjkgTDY2MS43MiAzNjcuNjkgTDY2MS43MiAzNjguODMgTDY2MS4xNyAzNjguODMgTDY2MS4xNyAzNjcuNjkgTDY2MC4zNSAzNjcuNjkgTDY2MC4zNSAzNjcuMDUgTDY2MS4xNyAzNjcuMDUgeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYzNS43NSwgLTM2MS45MykiIGNsYXNzPSJjbHMtMSIgc3R5bGU9ImZpbGw6IzIzMUYyMDsiIC8+DQogIDx0ZXh0IHg9IjMxLjE2cHgiIHk9IjYuNzQ2NjUzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNi4ycHgiIGZvbnQ9IkFyaWFsIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzdHlsZT0iZm9udC1mYW1pbHk6QXJpYWw7Zm9udC1zaXplOjYuMnB4O2ZpbGw6IzIzMWYyMDsiPlZpb2xlbmNlPC90ZXh0Pg0KICA8dGV4dCB4PSIzMS4xNnB4IiB5PSIxMy41NDY2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjYuMnB4IiBmb250PSJBcmlhbCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgc3R5bGU9ImZvbnQtZmFtaWx5OkFyaWFsO2ZvbnQtc2l6ZTo2LjJweDtmaWxsOiMyMzFmMjA7Ij5CbG9vZDwvdGV4dD4NCiAgPHRleHQgeD0iMzEuMTZweCIgeT0iMjAuMzQ2NjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI2LjJweCIgZm9udD0iQXJpYWwiIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJmb250LWZhbWlseTpBcmlhbDtmb250LXNpemU6Ni4ycHg7ZmlsbDojMjMxZjIwOyI+U2V4dWFsIFRoZW1lczwvdGV4dD4NCiAgPHRleHQgeD0iMzEuMTZweCIgeT0iMjcuMTQ2NjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI2LjJweCIgZm9udD0iQXJpYWwiIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJmb250LWZhbWlseTpBcmlhbDtmb250LXNpemU6Ni4ycHg7ZmlsbDojMjMxZjIwOyI+UGFydGlhbCBOdWRpdHk8L3RleHQ+DQogIDx0ZXh0IHg9IjMxLjE2cHgiIHk9IjMzLjk0NjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNi4ycHgiIGZvbnQ9IkFyaWFsIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzdHlsZT0iZm9udC1mYW1pbHk6QXJpYWw7Zm9udC1zaXplOjYuMnB4O2ZpbGw6IzIzMWYyMDsiPlN0cm9uZyBMYW5ndWFnZTwvdGV4dD4NCiAgPHRleHQgeD0iMzEuMTZweCIgeT0iNDAuNzQ2NjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI2LjJweCIgZm9udD0iQXJpYWwiIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJmb250LWZhbWlseTpBcmlhbDtmb250LXNpemU6Ni4ycHg7ZmlsbDojMjMxZjIwOyI+RHJ1ZyBSZWZlcmVuY2U8L3RleHQ+DQo8L3N2Zz4=" alt="ESRB 17+">
+                <img id="atlus" src="https://persona.atlus.com/p5r/resources/img/common/atlus_logo_3de81727fc4004e76185b55623322785.png" alt="Logo Atlus">
+                <img id="pstudio" src="https://persona.atlus.com/p5r/resources/img/common/p_studio_logo_dc9de3d8f715c1d2d1d175203f8c8856.png" alt="Logo P Studio">
+            </div>
+            <div class="textFooter">
+                <p>&copy; 2024 ©ATLUS. ©SEGA. All rights reserved. </p>
+                <p>Developed by <a href="https://github.com/lwcas1">Lucas Souza</a></p>
+                <p>Just a landing page prototype for my favorite game.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/script.js" async></script>
+</body>
+</html>
